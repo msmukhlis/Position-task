@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+span, a, label {
+    display: inline-block;
+}
+img {
+    max-width: 100%;
+}
+.all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.box {
+    width: 25%;
+}
+.photo {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.pic {
+    display: block;
+    transition: 0.4s;
+}
+.photo:hover .pic {
+    transform: scale(1.03);
+
+}
+.span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    padding: 10px;
+    transform: translateX(-10%) translateY(-30%);
+}
+.boxcenter {
+    width: 47%;
+}
+.date {
+    text-transform: uppercase;
+    color: gray;
+    margin: 5px 0;
+}
+.title {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.link {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.link:hover {
+    background-color: gray;
+}
+@media(max-width:900px){
+    .all {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .box2 {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .smallbox2 {
+        width: 48%;
+    }
+    .smallboxcenter {
+        width: 100%;
+    }
+}
+@media(max-width:600px){
+    .smallbox {
+        width: 100%;
+    }
+}
